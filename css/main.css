@@ -33,6 +33,7 @@ nav .content h1{
   display: grid;
   text-align: center;
   place-items:center;
+  padding-left: 10px;
 }
 
 nav .content{
@@ -49,7 +50,7 @@ nav .content .links{
   grid-auto-flow: column;
   place-items: center;
   grid-auto-columns: minmax(min-content, 70px);
-  
+
 }
 
 nav .content .links a{
@@ -90,7 +91,7 @@ nav .dropdown a:hover{
   background-color: white;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:500px) {
   nav .content .menu{display: inline;}
   nav .content .links{display: none;}
 }

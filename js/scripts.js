@@ -12,7 +12,7 @@ function menu(){
 }
 
 window.addEventListener("resize", function(){
-  if (window.innerWidth > 700) {
+  if (window.innerWidth > 500) {
     dropdown.style.display = "none";
     button.innerHTML = "menu";
   }
