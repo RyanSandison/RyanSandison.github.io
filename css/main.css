@@ -16,6 +16,12 @@ body{
   min-height: 100%
 }
 
+.Avatar{
+  border-radius: 100px;
+  width:20%;
+  margin-left: 10px;
+}
+
 nav{
   display: grid;
   grid-template-rows: minmax(min-content, 100px) min-content;
@@ -24,7 +30,9 @@ nav{
 
 nav .content h1{
   margin-right: auto;
-  margin-left: 50px
+  display: grid;
+  text-align: center;
+  place-items:center;
 }
 
 nav .content{
@@ -41,6 +49,7 @@ nav .content .links{
   grid-auto-flow: column;
   place-items: center;
   grid-auto-columns: minmax(min-content, 70px);
+  
 }
 
 nav .content .links a{
