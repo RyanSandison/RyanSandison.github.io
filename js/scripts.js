@@ -1,5 +1,6 @@
 var dropdown = document.querySelector("nav .dropdown");
 var button = document.querySelector("nav .menu");
+var main = document.querySelector("main")
 
 function menu(){
   if(dropdown.style.display ==="grid"){
