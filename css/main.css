@@ -7,13 +7,13 @@ body{
   margin: 0;
   display: grid;
   grid-auto-rows: 100px 50vh auto 10em;
-  grid-template-columns: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr .2fr;
   grid-template-areas:
   "header header header header"
-     "main main main aside"
+     "main main main main"
   "footer footer footer footer";
   background-color:#264653;
-  min-height: 100%
+  min-height: 100%;
 }
 
 .Avatar{
@@ -25,8 +25,8 @@ body{
 nav{
   display: grid;
   grid-template-rows: minmax(min-content, 100px) min-content;
-  padding-bottom: 50px;
-  height: 100px
+  height: 100px;
+  box-shadow: 0px 1px 60px black;
 }
 
 nav .content h1{
@@ -34,7 +34,9 @@ nav .content h1{
   display: grid;
   text-align: center;
   place-items:center;
-  padding-left: 50px;
+  padding-left: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px
 }
 
 nav .content{
@@ -43,16 +45,18 @@ nav .content{
   place-items: center;
   grid-auto-flow: column;
   align-content: space-evenly;
-  grid-template-columns: 90% 10%;
-  padding-right: 50px
+  grid-template-columns: 80% 25%;
+  padding-right: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
 }
 
 nav .content .links{
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 10px;
   grid-auto-flow: column;
   place-items: center;
-  grid-auto-columns: minmax(min-content, 70px);
+  grid-auto-columns: minmax(min-content, 100px);
 }
 
 nav .content .links a{
@@ -63,6 +67,9 @@ nav .content .links a{
 nav .content .links a:hover{
   color: #E76F51;
   text-decoration: none;
+  transition: ease;
+  transition-duration: 200ms;
+  font-weight: bold;
 }
 
 nav .content .menu{
@@ -80,12 +87,12 @@ nav .dropdown{
   display: none;
   background-color: #E9C46A;
   text-align: center;
-  margin-bottom: 100px
+  margin-bottom: 100px;
 }
 
 nav .dropdown a{
   color: black;
-  padding: 40px;
+  padding: 25px;
   text-decoration: none;
 }
 
@@ -94,7 +101,7 @@ nav .dropdown a:hover{
   background-color: white;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:520px) {
   nav .content .menu{display: inline;}
   nav .content .links{display: none;}
 }
@@ -107,7 +114,6 @@ header {
 
 main{
   grid-area: main;
-  padding-left: 50px;
   color:white;
 }
 
@@ -123,4 +129,36 @@ footer{
   padding: 10px;
   color:black;
   background-color: #F5F5F5
+}
+
+.mainPhotos{
+  display: grid;
+  height: 80vh;
+  background-color: white;
+  margin: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-gap: 10px;
+  
+  padding: 10px;
+}
+
+.box{
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  place-items:center;
+  color: black;
+  transition: all ease-in-out 200ms;
+  background-blend-mode: multiply;
+}
+
+.box:hover{
+  background-color: inherit;
+}
+
+#one{
+  background-image: url('../Photos/IMG_6643.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
