@@ -106,8 +106,10 @@ nav .dropdown a:hover{
 @media only screen and (max-width:520px) {
   nav .content .menu{display: inline;}
   nav .content .links{display: none;}
+  nav .content{
+    padding-right:0px;
+  }
 }
-
 
 
 header {
@@ -136,7 +138,7 @@ footer{
 .Cover-Photo{
   background-position: center;
   width: auto;
-  height: 87vh;
+  height: 88vh;
   background-image: url('../Photos/RoloRunning.jpg');
   background-size: cover;
   background-repeat: none;

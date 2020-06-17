@@ -1,6 +1,7 @@
 var dropdown = document.querySelector("nav .dropdown");
 var button = document.querySelector("nav .menu");
 var body = document.querySelector("body");
+var navbar = document.querySelector("nav .content");
 
 function menu(){
   if(dropdown.style.display ==="grid"){
@@ -10,7 +11,8 @@ function menu(){
   }else {
     dropdown.style.display = "grid";
     button.innerHTML = "close"
-    body.style.gridAutoRows ="auto 40% auto 10em";
+    body.style.gridAutoRows ="100px 50vh auto 10em";
+    navbar.style.height = "100px";
   }
 }
 
