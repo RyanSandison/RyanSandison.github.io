@@ -1,5 +1,15 @@
 html{
   height:100%;
+  background-color: #F5F5F5;
+}
+
+.title{
+  font-family: 'Dancing Script',serif ;
+  text-shadow: 2px 1px 1px black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50vh;
+  user-select: none;
 }
 
 body{
@@ -20,7 +30,6 @@ nav{
   display: grid;
   grid-template-rows: minmax(min-content, 100px) min-content;
   height: 100px;
-  box-shadow: 0px 1px 60px black;
 }
 
 nav .content h1{
@@ -139,14 +148,6 @@ footer{
   background-repeat: none;
 }
 
-.title{
-  font-family: 'Dancing Script', cursive;
-  text-shadow: 2px 1px 1px black;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 50vh;
-  user-select: none;
-}
 
 .Socials{
   padding: 25px;
@@ -154,4 +155,40 @@ footer{
 
 .socials .instagram{
   padding: 50px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column{
+  flex:25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width:100%;
+}
+
+.column img:hover{
+  opacity: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
