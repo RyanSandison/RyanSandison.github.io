@@ -35,7 +35,7 @@ nav .content h1{
   text-align: center;
   place-items:center;
   padding-left: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Dancing Script', cursive;
   font-size: 24px
 }
 
@@ -57,6 +57,7 @@ nav .content .links{
   grid-auto-flow: column;
   place-items: center;
   grid-auto-columns: minmax(min-content, 100px);
+  font-family: 'Dancing Script', cursive;
 }
 
 nav .content .links a{
@@ -85,9 +86,10 @@ nav .content .menu:hover{
 
 nav .dropdown{
   display: none;
-  background-color: #E9C46A;
+  background-color: #F5F5F5;
   text-align: center;
   margin-bottom: 100px;
+  font-family: 'Dancing Script', cursive;
 }
 
 nav .dropdown a{
@@ -131,34 +133,20 @@ footer{
   background-color: #F5F5F5
 }
 
-.mainPhotos{
-  display: grid;
-  height: 80vh;
-  background-color: white;
-  margin: 20px;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4,1fr);
-  grid-gap: 10px;
-  
-  padding: 10px;
-}
-
-.box{
-  display: flex;
-  background-color: grey;
-  justify-content: center;
-  place-items:center;
-  color: black;
-  transition: all ease-in-out 200ms;
-  background-blend-mode: multiply;
-}
-
-.box:hover{
-  background-color: inherit;
-}
-
-#one{
-  background-image: url('../Photos/IMG_6643.jpg');
+.Cover-Photo{
+  background-position: center;
+  width: auto;
+  height: 85vh;
+  background-image: url('../Photos/RoloRunning.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: none;
+}
+
+.title{
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 1px black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50vh
+
 }
