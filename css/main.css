@@ -10,9 +10,8 @@ body{
   grid-template-columns: 1fr 1fr 1fr .2fr;
   grid-template-areas:
   "header header header header"
-     "main main main main"
-  "footer footer footer footer";
-  background-color:#264653;
+     "main main main main";
+  background-color:#F5F5F5;
   min-height: 100%;
 }
 
@@ -106,9 +105,7 @@ nav .dropdown a:hover{
 @media only screen and (max-width:520px) {
   nav .content .menu{display: inline;}
   nav .content .links{display: none;}
-  nav .content{
-    padding-right:0px;
-  }
+  nav .content{padding-right:0px;}
 }
 
 
@@ -138,7 +135,7 @@ footer{
 .Cover-Photo{
   background-position: center;
   width: auto;
-  height: 88vh;
+  height: 87vh;
   background-image: url('../Photos/RoloRunning.jpg');
   background-size: cover;
   background-repeat: none;
@@ -146,7 +143,7 @@ footer{
 
 .title{
   font-family: 'Dancing Script', cursive;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 1px 1px black;
   font-size: 50px;
   text-align: center;
   margin-top: 50vh
