@@ -130,13 +130,13 @@ footer{
   grid-area: footer;
   padding: 10px;
   color:black;
-  background-color: #F5F5F5
+  background-color: #F5F5F5;
 }
 
 .Cover-Photo{
   background-position: center;
   width: auto;
-  height: 85vh;
+  height: 87vh;
   background-image: url('../Photos/RoloRunning.jpg');
   background-size: cover;
   background-repeat: none;
