@@ -12,12 +12,50 @@ html{
   user-select: none;
 }
 
+.bg-image{
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1{
+  background-image: url('../Photos/RoloRunning.jpg');
+}
+
+.img2{
+  background-image: url('../Photos/IMG_5494.jpg');
+}
+
+.img3{
+  background-image: url('../Photos/IMG_3633.jpg');
+}
+
+.bg-text{
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  border: 2px solid #F5F5F5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 1px 1px 1px black;
+}
+
 body{
   padding: 0;
   margin: 0;
   display: grid;
   grid-auto-rows: 100px 88vh auto 10em;
-  grid-template-columns: 1fr 1fr 1fr .2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "header header header header"
      "main main main main";
@@ -52,7 +90,7 @@ nav .content{
   padding-right: 70px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
-  z-index: 2;
+  z-index: 3;
 }
 
 nav .content .links{
@@ -95,7 +133,7 @@ nav .dropdown{
   text-align: center;
   margin-bottom: 100px;
   font-family: 'Dancing Script', cursive;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav .dropdown a{
@@ -139,16 +177,6 @@ footer{
   background-color: #F5F5F5;
 }
 
-.Cover-Photo{
-  background-position: center;
-  width: auto;
-  height: auto;
-  background-image: url('../Photos/RoloRunning.jpg');
-  background-size: cover;
-  background-repeat: none;
-}
-
-
 .Socials{
   padding: 25px;
 }
@@ -157,38 +185,66 @@ footer{
   padding: 50px;
 }
 
+.Portfolio{
+  background-color: #f1f1f1;
+  max-width: 1000px;
+  margin: auto;
+  color: black;
+}
+
+.Portfolio h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+}
+
+.Portfolio h2, h3{
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
 .row{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
 }
 
 .column{
-  flex:25%;
-  max-width: 25%;
-  padding: 0 4px;
+  float: left;
+  width: 50%;
 }
 
-.column img{
-  margin-top: 8px;
-  vertical-align: middle;
-  width:100%;
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.column img:hover{
-  opacity: 80%;
+.contents{
+  background-color: #f1f1f1;
+  padding: 10px;
 }
 
-@media screen and (max-width: 800px) {
+.image-1{
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    width: 100%;
   }
 }
