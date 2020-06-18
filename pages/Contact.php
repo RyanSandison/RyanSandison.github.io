@@ -14,10 +14,11 @@
     <title>Contact Me</title>
   </head>
   <body>
+    <?php echo "Hello World"; ?>
     <header>
       <nav>
         <div class="content">
-          <h1>Ryan Sandison Photography</h1>
+          <h1>Contact Me</h1>
           <div class="links">
             <a href="../index.html">Home</a>
             <a href="Photos.html">Photos</a>

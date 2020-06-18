@@ -118,7 +118,7 @@ html{
   font-size: 36px;
   border: 2px solid #F5F5F5;
   position: fixed;
-  top: 50%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -265,7 +265,6 @@ footer{
 }
 
 .Portfolio{
-  background-color: #f1f1f1;
   max-width: 1000px;
   margin: auto;
   color: black;
@@ -308,8 +307,14 @@ footer{
 }
 
 .contents{
-  background-color: #f1f1f1;
+  background-color: #F5F5F5;
   padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px black;
+}
+
+.contents p{
+  text-align: center;
 }
 
 .image-1{
