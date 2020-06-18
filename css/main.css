@@ -12,11 +12,90 @@ html{
   user-select: none;
 }
 
+.Cover-Photo{
+  background-image: url('../Photos/RoloRunning.jpg');
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container{
+  background-color:rgba(255, 255, 255, 0.2);
+  width:75%;
+  height: 97%;
+  margin: 10px auto 10px auto
+}
+
 .bg-image{
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.form-title{
+  text-align: center;
+  font-family: 'Dancing Script',serif ;
+  padding-top: 50px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.inputs{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:10px;
+  font-family: 'Dancing Script',serif ;
+  font-size: 18px;
+}
+
+.inputs input{
+  padding: 5px;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px
+}
+
+.message{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Dancing Script',serif ;
+  font-size: 24px;
+  text-align: center;
+}
+
+.message textarea{
+  width: 100%;
+  padding: 10px 20px 5px 20px;
+  margin: 10px;
+  height: 200px;
+  text-align: center;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+}
+
+.submit-button{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Dancing Script',serif ;
+  font-size: 20px;
+}
+
+.submit-button input{
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
 }
 
 .img1{
@@ -207,7 +286,7 @@ footer{
 }
 
 .row{
-  margin: 8px -16px;
+  margin: 8px;
 }
 
 .row,
@@ -237,14 +316,27 @@ footer{
   width: 100%;
 }
 
+.line{
+  max-width:800px;
+  min-width: 200px;
+  width: 75%;
+  height: 4px;
+  background-color: rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+}
+
 @media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
+  .column {width: 50%;}
+  .inputs{font-size: 16px; width: 50%;}
+  .message{font-size: 18px; width: 50%;}
+  .submit-button{font-size: 16px; width: 50%;}
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  .column {width: 100%;}
+  .inputs{font-size: 14px; width: 60%;}
+  .message{font-size: 16px; width: 60%;}
+  .submit-button{font-size: 14px; width: 60%;}
 }
