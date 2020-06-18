@@ -43,7 +43,7 @@
       <div class="form-container">
         <h1 class="form-title">Contact Me</h1>
         <div class="line"></div>
-        <form>
+        <form action="contactForm.php" method="post">
           <div class="inputs">
             <input type="text" name="name" value="" placeholder="Name">
             <input type="text" name="Email" value="" placeholder="Email">
