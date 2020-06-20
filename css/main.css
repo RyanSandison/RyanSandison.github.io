@@ -100,20 +100,14 @@ html{
 
 .img1{
   background-image: url('../Photos/Nature/RoloRunning.jpg');
-  filter: blur(12px);
-  -webkit-filter: blur(12px);
 }
 
 .img2{
   background-image: url('../Photos/IMG_5494.jpg');
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 .img3{
   background-image: url('../Photos/IMG_3633.jpg');
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 .bg-text{
