@@ -13,4 +13,3 @@
     mail($mailTo,  $text, $headers );
     header("Location: index.html?mailnd");
 }
-?>

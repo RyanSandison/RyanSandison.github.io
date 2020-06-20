@@ -14,7 +14,6 @@
     <title>Contact Me</title>
   </head>
   <body>
-    <?php echo "Hello World"; ?>
     <header>
       <nav>
         <div class="content">
