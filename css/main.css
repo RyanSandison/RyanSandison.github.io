@@ -235,6 +235,10 @@ nav .dropdown a:hover{
   overflow: hidden;
 }
 
+.nav-socials{
+  margin-right: 20px
+}
+
 .dropdown-cnt{
   display: none;
   position: absolute;
