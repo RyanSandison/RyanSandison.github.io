@@ -21,12 +21,12 @@
           <div class="links">
             <a href="../index.html">Home</a>
             <div class="nav-dropdown">
-              <a href="pages\Photos.html">Photos</a>
+              <a href="Photos.html">Photos</a>
                 <div class="dropdown-cnt">
-                  <a href="#">Architecture</a>
-                  <a href="#">Portraits</a>
-                  <a href="pages/Nature.html">Nature</a>
-                  <a href="#">Transport</a>
+                  <a href="Architecture.html">Architecture</a>
+                  <a href="Portraits.html">Portraits</a>
+                  <a href="Nature.html">Nature</a>
+                  <a href="Transport.html">Transport</a>
                 </div>
             </div>
             <a href="#">Contact</a>
@@ -50,16 +50,17 @@
       <div class="form-container">
         <h1 class="form-title">Contact Me</h1>
         <div class="line"></div>
-        <form action="contactForm.php" method="post">
+        <form action="../php/contactform.php" method="post">
           <div class="inputs">
             <input type="text" name="name" value="" placeholder="Name">
             <input type="text" name="Email" value="" placeholder="Email">
+            <input type="text" name="Subject" value="" placeholder="Subject">
           </div>
           <div class="message">
             <textarea class="message-area" name="Message" placeholder="Need a photoshoot? message me with some details and i will get back to you."></textarea>
           </div>
           <div class="submit-button">
-            <input type="submit" name="button" value="Send Message">
+            <input type="submit" name="submit" value="Send Message">
           </div>
         </form>
       </div>

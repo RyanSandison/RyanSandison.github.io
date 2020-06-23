@@ -2,14 +2,15 @@
 
   if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $email = $_POST['Email'];
+    $subject = $_POST['Subject'];
+    $message = $_POST['Message'];
 
-    $mailTo = "ryan.robertsandison@icloud.com";
+    $mailTo = "contact@ryansandisonphotography.co.uk";
+    $headers = "From: ".$email;
+    $txt = "You have received an email from ".$name.".\n\n".$message;
 
-    $headers = "From: ".$email
-    $text = "You have received an email from ".$name.".\n\n".$message
-
-    mail($mailTo,  $text, $headers );
-    header("Location: index.html?mailnd");
+    mail($mailTo, $subject, $txt, $headers );
+    header("Location: ../pages/Contact.php?mailsend");
 }
+?>
